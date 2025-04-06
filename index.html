@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>H2O Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>H2O Tracker</h1>
+    <h4>Smart way to keep your body hydrated</h4>
+  </header>
+
+  <div class="input-section">
+    <h2>Enter Your Info</h2>
+    <input type="text" id="name" placeholder="Name" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="number" id="weight" placeholder="Weight (kg)" />
+    <button onclick="calculateWater()" id="calculateBtn">Calculate Water Need</button>
+  </div>
+
+  <section class="tracker">
+    <h2>Track Your Water Intake</h2>
+    <button onclick="addIntake()">I Drank 250ml</button>
+    <div class="progress-bar">
+      <div id="progress" class="progress-fill"></div>
+    </div>
+    <p id="progress-info">0 ml / 0 ml</p>
+  </section>
+
+  <section class="reminder">
+    <h2>Set Hourly Reminder</h2>
+    <button onclick="startReminder()">Start Reminder</button>
+  </section>
+
+  <audio id="reminderSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

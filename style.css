@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #ffe0f0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background: #00bcd4;
+    padding: 20px;
+    color: white;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #ff4081, #7c4dff);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 30px;
+    background: #ccc;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00e676, #76ff03);
+    transition: width 0.5s ease;
+  }
+  
+  section {
+    margin: 30px 0;
+  }
